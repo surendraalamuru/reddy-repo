@@ -10,3 +10,10 @@ x="abc"
 if [$x == "abc"]; then
   echo Yes both are equal
   fi
+
+file=/tmp/new
+if [ -f $file ]; then
+  echo file Exist
+else
+  echo File does not exist
+fi
